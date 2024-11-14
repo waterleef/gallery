@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>施設ギャラリー</title>
+    <style>
+        /* 基本のCSSスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .banner {
+            background-image: url('banner.jpg'); /* バナー用の画像をここに設定 */
+            background-size: cover;
+            height: 300px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner h1 {
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="mmexport1731590950856.png" alt="头像" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 15px;">
+            <div>
+                <h1 style="font-family: 'SimSun', serif;"> 石泉山人的照相馆 </h1>
+                <p> 隆重祝贺照相馆建成 </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav>
+        <a href="#home">自然风景</a>
+        <a href="#facilities">历史名胜</a>
+        <a href="#events">风土人情</a>
+        <a href="#access">故乡情怀</a>
+        <a href="#contact">大学的活动</a>
+    </nav>
+
+    <!-- バナー画像 -->
+    <div class="banner">
+        <h1>魅力あふれる空間へようこそ</h1>
+    </div>
+
+    <!-- 施設紹介セクション -->
+    <section id="facilities" class="section">
+        <h2>施設紹介</h2>
+        <p>各施設の特徴や利用案内について紹介します。</p>
+        <div class="gallery">
+            <img src="facility1.jpg" alt="施設写真1">
+            <img src="facility2.jpg" alt="施設写真2">
+            <img src="facility3.jpg" alt="施設写真3">
+        </div>
+    </section>
+
+    <!-- イベント情報セクション -->
+    <section id="events" class="section">
+        <h2>イベント情報</h2>
+        <p>最新のイベントやワークショップについてのお知らせです。</p>
+        <ul>
+            <li>○○イベント - 2024年11月20日</li>
+            <li>▲▲ワークショップ - 2024年12月10日</li>
+            <li>クリスマスコンサート - 2024年12月25日</li>
+        </ul>
+    </section>
+
+    <!-- アクセスセクション -->
+    <section id="access" class="section">
+        <h2>アクセス</h2>
+        <p>〒123-4567 東京都三鷹市○○区○○丁目</p>
+        <p>公共交通機関でのアクセスや駐車場情報はこちら。</p>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2024 施設ギャラリー. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
