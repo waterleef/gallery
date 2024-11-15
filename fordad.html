@@ -1,4 +1,56 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* モバイル向けスタイル (デフォルト) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .banner {
+    height: 200px;
+  }
+  .banner h1 {
+    font-size: 1.8em;
+  }
+  .section {
+    padding: 20px 10px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* タブレット向けスタイル */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .banner {
+    height: 250px;
+  }
+  .banner h1 {
+    font-size: 2em;
+  }
+}
+
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 2.5em;
+  }
+  .section {
+    padding: 40px 20px;
+  }
+}
+</style>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -102,10 +154,10 @@
         <h2 style="font-family: '楷体', cursive;">探索与发现</h2>
         <p style="font-family: '楷体', cursive;">在这里你会找到相片的魅力</p>
         <div class="gallery">
-            <img src="P1.jpg" alt="施設写真1">
-            <img src="P2.jpg" alt="施設写真2">
-            <img src="P3.jpg" alt="施設写真3">
-            <img src="P4.jpg" alt="施設写真4">
+            <img src="P1.jpg" alt="施設写真1" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="P2.jpg" alt="施設写真2" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="P3.jpg" alt="施設写真3" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="P4.jpg" alt="施設写真4" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
         </div>
     </section>
 
