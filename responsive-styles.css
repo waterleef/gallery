@@ -1,0 +1,48 @@
+/* モバイル向けスタイル (デフォルト) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .banner {
+    height: 200px;
+  }
+  .banner h1 {
+    font-size: 1.8em;
+  }
+  .section {
+    padding: 20px 10px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* タブレット向けスタイル */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .banner {
+    height: 250px;
+  }
+  .banner h1 {
+    font-size: 2em;
+  }
+}
+
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 2.5em;
+  }
+  .section {
+    padding: 40px 20px;
+  }
+}
