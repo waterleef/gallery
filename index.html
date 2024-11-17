@@ -1,3 +1,190 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b11166f66b41a856d594b81c48905bc9febaf36a2d93add462d6e9abb383f59
-size 7072
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* モバイル向けスタイル (デフォルト) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .banner {
+    height: 200px;
+  }
+  .banner h1 {
+    font-size: 1.8em;
+  }
+  .section {
+    padding: 20px 10px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* タブレット向けスタイル */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .banner {
+    height: 250px;
+  }
+  .banner h1 {
+    font-size: 2em;
+  }
+}
+
+/* デスクトップ向けスタイル */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner h1 {
+    font-size: 2.5em;
+  }
+  .section {
+    padding: 40px 20px;
+  }
+}
+</style>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影画廊</title>
+    <style>
+        /* 基本のCSSスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .banner {
+            background-image: url('banner.jpg'); /* バナー用の画像をここに設定 */
+            background-size: cover;
+            height: 300px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner h1 {
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="mmexport1731590950856.png" alt="头像" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 15px;">
+            <div>
+                <h1 style="font-family: 'SimSun', serif;"> 石泉山庄摄影画廊 </h1>
+                <p> 隆重祝贺照相馆建成 </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ナビゲーション -->
+    <nav style="display: flex; justify-content: center; gap: 10px; padding: 15px;">
+        <a href="#home" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">摄影画廊</a>
+        <a href="#facilities" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">历史名胜</a>
+        <a href="#events" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">风土人情</a>
+        <a href="#access" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">故乡情怀</a>
+        <a href="#contact" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">大学的活动</a>
+    </nav>
+
+    <!-- バナー画像 -->
+    <div class="banner">
+        <div style="position: relative;">
+            <img src="Greatwall1.jpg" alt="美丽的石泉山庄风景" style="width: 100%; height: 300px; object-fit: cover;">
+            <h1 style="position: absolute; top: 20px; left: 20px; color: white; font-family:  '楷体', cursive; border: none; font-size: 1.5em;">魅力图片</h1>
+        </div>
+    </div>
+
+    <!-- 施設紹介セクション -->
+    <section id="facilities" class="section">
+        <h2 style="font-family: '楷体', cursive;">探索与发现</h2>
+        <p style="font-family: '楷体', cursive;">在这里你会找到相片的魅力</p>
+        <div class="gallery">
+            <img src="P1.jpg" alt="施設写真1" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="P2.jpg" alt="施設写真2" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="P3.jpg" alt="施設写真3" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="P4.jpg" alt="施設写真4" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+    </section>
+
+    <!-- イベント情報セクション -->
+    <section id="events" class="section">
+        <h2>我的摄影预定</h2>
+        <p>最新的摄影活动，欢迎您的加入</p>
+        <ul>
+            <li>活动一 - 2024年11月20日</li>
+            <li>活动二 - 2024年12月10日</li>
+            <li>活动三 - 2024年12月25日</li>
+        </ul>
+    </section>
+
+    <!-- アクセスセクション -->
+    <section id="access" class="section">
+        <h2>请联系我哟</h2>
+        <p>E-mail 123456789@qq.com</p>
+        <p>电话 1234567890</p>
+        <p>微信号 123456789</p>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2024 石泉山庄摄影画廊. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
