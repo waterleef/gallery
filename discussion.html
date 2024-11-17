@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 评论数据将被保存在localStorage中 -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>评论区示例</title>
+  <link rel="stylesheet" href="styles_dis.css">
+</head>
+
+<body>
+  <h1>评论区</h1>
+  <div id="comment-section">
+      <!-- 这里将显示评论内容，每条评论添加删除按钮 -->
+  </div>
+  <form id="comment-form">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" required>
+    <label for="comment">评论：</label>
+    <textarea id="comment" required></textarea>
+    <input type="submit" value="提交评论">
+  </form>
+  <script src="script_dis.js"></script>
+</body>
+
+</html>
